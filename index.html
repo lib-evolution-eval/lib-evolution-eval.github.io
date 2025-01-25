@@ -365,135 +365,149 @@
             Below, three tables illustrate scenarios for <b>Matplotlib</b> (deprecated vs. introduced APIs) 
             and <b>PyTorch</b> (introduced or deprecated) from different years:
           </p>
-          <div class="table-container">
-            <!-- First sub-table: Matplotlib Deprecated -->
-            <table class="table is-bordered is-striped is-narrow is-hoverable" style="margin-bottom: 1rem;">
-              <thead>
-                <tr>
-                  <th colspan="3" class="has-text-centered">
-                    StarCoder2 (Model Release: 2024) on Matplotlib Deprecated APIs
-                  </th>
-                </tr>
-                <tr>
-                  <th>Version Year</th>
-                  <th>Deprecated API Score</th>
-                  <th>Overall Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2019</td>
-                  <td><u>38.58</u></td>
-                  <td><b>61.83</b></td>
-                </tr>
-                <tr>
-                  <td>2020</td>
-                  <td><u>43.93</u></td>
-                  <td><b>60.12</b></td>
-                </tr>
-                <tr>
-                  <td>2021</td>
-                  <td>53.01</td>
-                  <td><b>61.31</b></td>
-                </tr>
-                <tr>
-                  <td>2022</td>
-                  <td>52.74</td>
-                  <td><b>65.15</b></td>
-                </tr>
-                <tr>
-                  <td>2023</td>
-                  <td>57.14</td>
-                  <td><b>66.08</b></td>
-                </tr>
-              </tbody>
-            </table>
 
-            <!-- Second sub-table: Matplotlib Introduced -->
-            <table class="table is-bordered is-striped is-narrow is-hoverable" style="margin-bottom: 1rem;">
-              <thead>
-                <tr>
-                  <th colspan="3" class="has-text-centered">
-                    CodeGen 1.0 (Knowledge Cutoff: 2022) on Matplotlib Introduced APIs
-                  </th>
-                </tr>
-                <tr>
-                  <th>Version Year</th>
-                  <th>Introduced API Score</th>
-                  <th>Overall Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2020</td>
-                  <td>53.14</td>
-                  <td><b>62.89</b></td>
-                </tr>
-                <tr>
-                  <td>2021</td>
-                  <td>54.23</td>
-                  <td><b>62.85</b></td>
-                </tr>
-                <tr>
-                  <td>2022</td>
-                  <td>56.29</td>
-                  <td><b>60.04</b></td>
-                </tr>
-                <tr>
-                  <td>2023</td>
-                  <td><u>44.08</u></td>
-                  <td><b>59.44</b></td>
-                </tr>
-                <tr>
-                  <td>2024</td>
-                  <td><u>41.37</u></td>
-                  <td><b>58.57</b></td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- Use Bulma columns to display sub-tables side-by-side -->
+          <div class="columns is-multiline">
+            <!-- First Table: Matplotlib Deprecated -->
+            <div class="column is-one-third">
+              <div class="table-container">
+                <table class="table is-bordered is-striped is-narrow is-hoverable">
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="has-text-centered">
+                        StarCoder2 (Model Release: 2024) on Matplotlib Deprecated APIs
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>Version Year</th>
+                      <th>Deprecated API Score</th>
+                      <th>Overall Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2019</td>
+                      <td><u>38.58</u></td>
+                      <td><b>61.83</b></td>
+                    </tr>
+                    <tr>
+                      <td>2020</td>
+                      <td><u>43.93</u></td>
+                      <td><b>60.12</b></td>
+                    </tr>
+                    <tr>
+                      <td>2021</td>
+                      <td>53.01</td>
+                      <td><b>61.31</b></td>
+                    </tr>
+                    <tr>
+                      <td>2022</td>
+                      <td>52.74</td>
+                      <td><b>65.15</b></td>
+                    </tr>
+                    <tr>
+                      <td>2023</td>
+                      <td>57.14</td>
+                      <td><b>66.08</b></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <!-- Second Table: Matplotlib Introduced -->
+            <div class="column is-one-third">
+              <div class="table-container">
+                <table class="table is-bordered is-striped is-narrow is-hoverable">
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="has-text-centered">
+                        CodeGen 1.0 (Knowledge Cutoff: 2022) on Matplotlib Introduced APIs
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>Version Year</th>
+                      <th>Introduced API Score</th>
+                      <th>Overall Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2020</td>
+                      <td>53.14</td>
+                      <td><b>62.89</b></td>
+                    </tr>
+                    <tr>
+                      <td>2021</td>
+                      <td>54.23</td>
+                      <td><b>62.85</b></td>
+                    </tr>
+                    <tr>
+                      <td>2022</td>
+                      <td>56.29</td>
+                      <td><b>60.04</b></td>
+                    </tr>
+                    <tr>
+                      <td>2023</td>
+                      <td><u>44.08</u></td>
+                      <td><b>59.44</b></td>
+                    </tr>
+                    <tr>
+                      <td>2024</td>
+                      <td><u>41.37</u></td>
+                      <td><b>58.57</b></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
-            <!-- Third sub-table: PyTorch Introduced/Deprecated -->
-            <table class="table is-bordered is-striped is-narrow is-hoverable">
-              <thead>
-                <tr>
-                  <th colspan="3" class="has-text-centered">
-                    StarCoder2 (Knowledge Cutoff: 2024) on PyTorch Introduced/Deprecated APIs
-                  </th>
-                </tr>
-                <tr>
-                  <th>Version Year</th>
-                  <th>Deprec./Intro. API Score</th>
-                  <th>Overall Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2018</td>
-                  <td>68.78</td>
-                  <td><b>71.06</b></td>
-                </tr>
-                <tr>
-                  <td>2020</td>
-                  <td>59.10</td>
-                  <td><b>75.45</b></td>
-                </tr>
-                <tr>
-                  <td>2021</td>
-                  <td>68.13</td>
-                  <td><b>72.84</b></td>
-                </tr>
-                <tr>
-                  <td>2022</td>
-                  <td>60.93</td>
-                  <td><b>71.02</b></td>
-                </tr>
-                <tr>
-                  <td>2023</td>
-                  <td>67.13</td>
-                  <td><b>72.82</b></td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- Third Table: PyTorch Introduced/Deprecated -->
+            <div class="column is-one-third">
+              <div class="table-container">
+                <table class="table is-bordered is-striped is-narrow is-hoverable">
+                  <thead>
+                    <tr>
+                      <th colspan="3" class="has-text-centered">
+                        StarCoder2 (Knowledge Cutoff: 2024) on PyTorch Introduced/Deprecated APIs
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>Version Year</th>
+                      <th>Deprec./Intro. API Score</th>
+                      <th>Overall Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2018</td>
+                      <td>68.78</td>
+                      <td><b>71.06</b></td>
+                    </tr>
+                    <tr>
+                      <td>2020</td>
+                      <td>59.10</td>
+                      <td><b>75.45</b></td>
+                    </tr>
+                    <tr>
+                      <td>2021</td>
+                      <td>68.13</td>
+                      <td><b>72.84</b></td>
+                    </tr>
+                    <tr>
+                      <td>2022</td>
+                      <td>60.93</td>
+                      <td><b>71.02</b></td>
+                    </tr>
+                    <tr>
+                      <td>2023</td>
+                      <td>67.13</td>
+                      <td><b>72.82</b></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
           <p>
