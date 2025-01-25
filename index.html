@@ -211,23 +211,41 @@
 </section>
 
 <!-- Main Results -->
-<section class="section">
-  <!-- Remove or adjust "is-max-desktop" if you want an even wider container -->
-  <div class="container is-max-desktop">  
+<section class="section" id="main-results">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Main Results</h2>
         <div class="content has-text-justified">
+
+          <!-- Introduce the polar plot first -->
           <p>
-            Below we show the performance of various code LLMs (e.g., StarCoder2-7B, Mistral-7B, and GPT-4o-Mini) under three different prompt settings:
-            <em>In-File (not version-aware)</em>, <em>Version-Aware</em>, and <em>Version-Aware RAG</em>. 
-            The table focuses on two representative libraries: PyTorch and Matplotlib.
+            <b>Figure 5</b> below illustrates the code completion performance (F1 score) of the StarCoder2, 
+            Mistral, and GPT-4o-Mini models. As libraries evolve, these code LLMs show significant 
+            variations in their ability to complete code correctly, indicating the need for 
+            version-aware context.
           </p>
 
-          <!-- Force wider table and single-line text -->
+          <!-- Polar plot (Figure 5) -->
+          <figure style="text-align: center; margin: 20px 0;">
+            <img src="polar_leeval.png" alt="Polar Plot showing F1 scores" style="max-width: 70%;">
+            <figcaption class="has-text-centered" style="margin-top: 10px;">
+              <strong>Figure 5:</strong> Illustration of the code completion performance of 
+              StarCoder2, Mistral, and GPT-4o-Mini. The performance varies significantly as libraries evolve.
+            </figcaption>
+          </figure>
+
+          <!-- Paragraph leading into the table -->
+          <p>
+            After examining overall trends from the polar plot, we present a more detailed breakdown of 
+            results (see table below) focusing on two representative libraries — PyTorch and Matplotlib. 
+            We evaluate three prompting strategies: <em>In-File (not version-aware)</em>, 
+            <em>Version-Aware</em>, and <em>Version-Aware RAG</em>.
+          </p>
+
+          <!-- Example table with results -->
           <div class="table-container" style="overflow-x: auto;">
-            <table class="table is-bordered is-striped"
-                   style="white-space: nowrap; width: 100%;">
+            <table class="table is-bordered is-striped" style="white-space: nowrap; width: 100%;">
               <thead>
                 <tr>
                   <th>Model</th>
@@ -258,7 +276,7 @@
                   <td><b>73.3</b></td>
                   <td><b>75.4</b></td>
                 </tr>
-                
+
                 <!-- Mistral-7B rows -->
                 <tr>
                   <td rowspan="3">Mistral-7B</td>
@@ -306,8 +324,9 @@
 
           <p>
             We observe that performance generally improves with additional version-related context or retrieval. 
-            However, inherent biases in the model still remain, especially for newly introduced or long-deprecated APIs.
+            However, inherent biases remain, especially for APIs that are newly introduced or deprecated over time.
           </p>
+
         </div>
       </div>
     </div>
