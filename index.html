@@ -189,7 +189,8 @@
 
 <!-- Main Results -->
 <section class="section">
-  <div class="container is-max-desktop">
+  <!-- Remove or adjust "is-max-desktop" if you want an even wider container -->
+  <div class="container is-max-desktop">  
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Main Results</h2>
@@ -200,9 +201,10 @@
             The table focuses on two representative libraries: PyTorch and Matplotlib.
           </p>
 
-          <!-- Example table with results -->
-          <div class="table-container">
-            <table class="table is-bordered is-striped is-fullwidth">
+          <!-- Force wider table and single-line text -->
+          <div class="table-container" style="overflow-x: auto;">
+            <table class="table is-bordered is-striped"
+                   style="white-space: nowrap; width: 100%;">
               <thead>
                 <tr>
                   <th>Model</th>
