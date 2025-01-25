@@ -300,47 +300,52 @@
             We present a collection of sub-figures that delve into crucial aspects of model performance, 
             covering scaling effects, in-file vs. version-aware retrieval, direct vs. indirect completions, and more.
           </p>
-          <!-- 6 images for analysis, each about 30% width -->
+          
+          <!-- Two columns per row: each image is half-width, so they appear larger -->
           <div class="columns is-multiline">
-            <div class="column is-one-third">
+            
+            <!-- Row 1 -->
+            <div class="column is-half">
               <figure class="image">
-                <img src="codesage_scale.png" alt="[CodeSage Scaling]" />
+                <img src="codesage_scale.png" alt="[CodeSage Scaling]" style="width: 100%;">
                 <figcaption class="has-text-centered">MRR Scores for CodeSage Small and Large Models</figcaption>
               </figure>
             </div>
-            <div class="column is-one-third">
+            <div class="column is-half">
               <figure class="image">
-                <img src="scaling_starcoder.png" alt="[StarCoder Scaling]" />
+                <img src="scaling_starcoder.png" alt="[StarCoder Scaling]" style="width: 100%;">
                 <figcaption class="has-text-centered">F1 Scores for Starcoder2 and StarCoder Models</figcaption>
               </figure>
             </div>
-            <div class="column is-one-third">
+
+            <!-- Row 2 -->
+            <div class="column is-half" style="margin-top: 15px;">
               <figure class="image">
-                <img src="infile_rag.png" alt="[In-File vs RAG]" />
+                <img src="infile_rag.png" alt="[In-File vs RAG]" style="width: 100%;">
                 <figcaption class="has-text-centered">In-File vs Version-Aware RAG Performance</figcaption>
               </figure>
             </div>
-          </div>
-
-          <div class="columns is-multiline" style="margin-top: 15px;">
-            <div class="column is-one-third">
+            <div class="column is-half" style="margin-top: 15px;">
               <figure class="image">
-                <img src="direct_indirect.png" alt="[Direct vs Indirect Completions]" />
+                <img src="direct_indirect.png" alt="[Direct vs Indirect Completions]" style="width: 100%;">
                 <figcaption class="has-text-centered">Direct vs Indirect Code Completion</figcaption>
               </figure>
             </div>
-            <div class="column is-one-third">
+
+            <!-- Row 3 -->
+            <div class="column is-half" style="margin-top: 15px;">
               <figure class="image">
-                <img src="overall_deprecated.png" alt="[Overall vs Deprecated]" />
+                <img src="overall_deprecated.png" alt="[Overall vs Deprecated]" style="width: 100%;">
                 <figcaption class="has-text-centered">Overall vs Deprecated Set Code Completion</figcaption>
               </figure>
             </div>
-            <div class="column is-one-third">
+            <div class="column is-half" style="margin-top: 15px;">
               <figure class="image">
-                <img src="rag_em.png" alt="[MRR Scores CodeSage/OpenAI Ada]" />
+                <img src="rag_em.png" alt="[MRR Scores CodeSage/OpenAI Ada]" style="width: 100%;">
                 <figcaption class="has-text-centered">MRR Scores for CodeSage / OpenAI Ada</figcaption>
               </figure>
             </div>
+
           </div>
         </div>
       </div>
